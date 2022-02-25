@@ -8,8 +8,8 @@
   // J |789| F
   //   -----
   //    IHG
-  export let main; // 123 456 789
-  export let sides; // ABC DEF GHI JKL
+  export let main = '--- --- ---'; // 123 456 789
+  export let sides = ''; // ABC DEF GHI JKL
 
   function getStyle(color) {
     const fillColor = {

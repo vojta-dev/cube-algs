@@ -25,23 +25,31 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
   :global(body) {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: #111;
     color: white;
+    height: 100vh;
   }
 
   h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 4rem;
+    margin: 1rem;
   }
 
   main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 3rem;
     height: 100%;
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
   }
 
   button {
@@ -66,15 +74,28 @@
   }
 
   footer {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
+    margin: 1rem;
+    max-width: 100%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   footer a {
     color: #60a5fa;
     text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    main {
+      gap: 1rem;
+    }
+
+    button {
+      padding: 0.5rem;
+    }
   }
 </style>
