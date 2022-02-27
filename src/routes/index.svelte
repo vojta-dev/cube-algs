@@ -6,10 +6,12 @@
 <h1>Rubik's cube algorithms</h1>
 <main>
   {#each getCategories() as category}
-    <button>
-      <Cube width="200" {...category.cube} />
-      {category.name}
-    </button>
+    <a href="./{category.name}">
+      <button>
+        <Cube width="200" {...category.cube} />
+        {category.name}
+      </button>
+    </a>
   {/each}
 </main>
 <footer>
@@ -31,6 +33,10 @@
     background-color: #111;
     color: white;
     height: 100vh;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1 {
@@ -61,7 +67,7 @@
     background-color: black;
     border: 2px solid #333;
     border-radius: 16px;
-    color: inherit;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     transition: all 150ms;
@@ -82,7 +88,6 @@
 
   footer a {
     color: #60a5fa;
-    text-decoration: none;
   }
 
   @media (max-width: 640px) {
