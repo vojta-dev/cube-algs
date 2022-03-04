@@ -1,6 +1,7 @@
 <script>
   import Cube from '../lib/CubeSVG.svelte';
   import { getCategories } from '../db';
+  import polyfill from '../polyfill';
 </script>
 
 <h1>Rubik's cube algorithms</h1>
