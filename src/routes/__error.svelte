@@ -13,7 +13,10 @@
 </script>
 
 <h1>ERROR {status}</h1>
-<p>If you think this is an error, please <a href="https://github.com/vojta-dev/cube-algs/issues/new">report it on GitHub</a></p>
+<p>
+  If you think this is an error, please
+  <a href="https://github.com/vojta-dev/cube-algs/issues/new?labels=bug&template=bug_report.md">report it on GitHub</a>
+</p>
 <button on:click={() => history.back()}>Go back to previous page</button>
 <a href="https://cube-algs.vercel.app"><button on:click={() => history.back()}>Go to homepage</button></a>
 
