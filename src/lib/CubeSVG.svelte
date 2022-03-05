@@ -1,4 +1,6 @@
 <script>
+  import { beforeUpdate } from 'svelte';
+
   export let width = 144;
 
   //    ABC
@@ -11,7 +13,9 @@
   export let main = '--- --- ---'; // 123 456 789
   export let sides = ''; // ABC DEF GHI JKL
 
-  if (main.length === 1) main = 'XXX XXX XXX'.replaceAll('X', main[0]);
+  beforeUpdate(() => {
+    if (main.length === 1) main = 'XXX XXX XXX'.replaceAll('X', main[0]);
+  });
 
   function getStyle(color) {
     const fillColor = {
