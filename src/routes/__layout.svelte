@@ -1,3 +1,14 @@
+<script>
+  import { getCategories } from '../db';
+</script>
+
+<nav>
+  <a href="/">Home</a>
+  {#each getCategories() as category}
+    <a href="/{category.name}">{category.name}</a>
+  {/each}
+</nav>
+
 <main>
   <slot />
 </main>
@@ -27,6 +38,14 @@
   :global(a) {
     text-decoration: none;
     color: #60a5fa;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+    font-size: 1.25rem;
   }
 
   main {

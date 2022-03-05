@@ -21,7 +21,7 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 4rem;
-    margin: 1rem;
+    margin: 0;
   }
 
   main {
