@@ -17,13 +17,6 @@
 </main>
 
 <style>
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 4rem;
-    margin: 0;
-  }
-
   main {
     display: flex;
     flex-wrap: wrap;

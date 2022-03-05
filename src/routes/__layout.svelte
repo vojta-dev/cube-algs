@@ -40,6 +40,13 @@
     color: #60a5fa;
   }
 
+  :global(h1) {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+  }
+
   nav {
     display: flex;
     justify-content: center;
