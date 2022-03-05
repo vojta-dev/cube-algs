@@ -21,10 +21,12 @@
     background-color: #111;
     color: white;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
   }
 
   :global(a) {
     text-decoration: none;
+    color: #60a5fa;
   }
 
   main {
@@ -39,9 +41,5 @@
     max-width: 100%;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  footer a {
-    color: #60a5fa;
   }
 </style>

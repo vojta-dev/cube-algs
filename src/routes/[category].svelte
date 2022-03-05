@@ -1,7 +1,14 @@
 <script context="module">
   import { getAlgs } from '../db';
 
-  export const load = ({ params }) => ({ props: { algs: getAlgs(params.category), category: params.category } });
+  export const load = ({ params }) => {
+    const algs = getAlgs(params.category);
+
+    return {
+      status: algs === undefined ? 404 : 200,
+      props: { algs: algs, category: params.category },
+    };
+  };
 </script>
 
 <script>
