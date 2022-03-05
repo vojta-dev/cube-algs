@@ -20,7 +20,7 @@
     margin: 0;
     background-color: #111;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -34,6 +34,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   footer {
