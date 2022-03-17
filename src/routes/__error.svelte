@@ -1,9 +1,7 @@
 <script context="module">
-  export function load({ error, status }) {
+  export function load({ status }) {
     return {
-      props: {
-        status,
-      },
+      props: { status },
     };
   }
 </script>
@@ -18,7 +16,7 @@
   <a href="https://github.com/vojta-dev/cube-algs/issues/new?labels=bug&template=bug_report.md">report it on GitHub</a>
 </p>
 <button on:click={() => history.back()}>Go back to previous page</button>
-<a href="https://cubealgs.vercel.app"><button on:click={() => history.back()}>Go to homepage</button></a>
+<a href="/"><button>Go to homepage</button></a>
 
 <style>
   * {
